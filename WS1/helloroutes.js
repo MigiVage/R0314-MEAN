@@ -4,21 +4,24 @@ http.createServer(function(request, response){
     if(request.url === "/"){
         response.write("<h1>Olet juuressa</h1>")
     }
-    else if(request.url === "/homepage"){
-        response.write("<h1>HOMEPAGE</h1>")
+    else if(request.url === "/kotisivu"){
+        response.write("<h1>KOTISIVU</h1>")
     }
  
+    else if(request.url === "/uusi"){
+        response.write("<h1>UUSI!!!</h1>")
+    }
+	
     else if(request.url === "/table"){
         response.write(`
         
         <style>
         
         table, th, tr{
-			font-family:Arial Black;
-            color:white;
-            background-color:black;
-            border:2px white;
-            padding:10px;
+	font-family:Arial Black;
+	color:red;
+	background-color:black;
+
         }
         
         </style>
